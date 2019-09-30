@@ -1,0 +1,15 @@
+@media  screen and(min-width: 992px) /*desktop*/ 
+{
+}
+@media  screen and(max-width: 768px) /*tablet*/ 
+{
+    .big_txt_logos
+    {
+        margin-inline-start: 1rem;
+
+    }
+}
+@media  screen and(max-width: 425px) /*mobile*/
+{
+	
+}

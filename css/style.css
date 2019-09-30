@@ -1,0 +1,290 @@
+/* http://saian.soonlabs.com/landing/ */
+* {
+    box-sizing: border-box;
+    background: transparent;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: #cdcdcd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+section {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    background-color: #000;
+}
+.container-fluid{
+    display: flex;
+    width:100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;  
+    margin: 0;
+}
+.col-4 {
+    width: 33.33333%;
+}
+.mt-5{
+    margin-top:3rem;
+}
+h2{
+    margin:0;
+}
+p{
+    margin:0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.logo {
+    display: inline-flex;
+    width: 100%;
+    margin-left: 10%;
+}
+.navbar{
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10%;
+}
+
+ul {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    -webkit-margin-start: 15px;
+            margin-left: 15px;
+}
+a {
+    text-decoration: none;
+}
+.submenu-item {
+    color: #fff;
+}
+.submenu-item:hover {
+    color: red;
+}
+.menu-item {
+    font-size: 18px;
+}
+.menu-item:last-child {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+/* section 1 */
+.secHolder{
+    display: flex;
+    width: 100%;
+    height: 910px;
+    position: relative;
+    display: block;
+    background-image: url(../image/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.text-center {
+    text-align: center;
+}
+.big-text-image {
+    position: relative;
+    width: 40%;
+    height: 910px;
+    top:38%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+}
+.btn-around {
+    display:block;
+    width:50px;
+    height:50px;
+    position: absolute;
+    left:50%;
+    bottom: 15%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    line-height: 50px;
+    border: 1px solid transparent;
+    background-color: red;
+    color:#fff;
+    border-radius: 50%;
+}
+.btn-round {
+   font-size: 20px;
+   font-weight: 300;
+}
+.imgHolder>img {
+    padding: 0 15px;
+}
+figure {
+    border-bottom: 3px solid transparent;
+    border-radius: 0px 0px 25px 25px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+figure:hover {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+            border-bottom: 3px solid #6c6c6c;
+}
+figcaption{
+    color:#6c6c6c;
+    text-align: center;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+        -webkit-margin-after: 10px;
+                margin-bottom:  10px;
+    -webkit-margin-before: 10px;
+            margin-top: 10px;
+}
+figure:hover figcaption {
+    color: #fff;
+}
+.hr_one, .hr_tuo{
+    display: block;
+    width: 100%;
+    margin: 8rem auto;
+    background-color: #000;
+    /*-webkit-border-after: 1px solid rgba(255, 255, 255, 0.26);
+            border-block-end: 1px solid rgba(255, 255, 255, 0.26);*/
+}
+hr {
+    width: 60%;
+    padding: 0;
+    margin: 0 auto;
+    opacity: 0.6;
+    background-color: #000;
+}
+ 
+.textHolder{
+    display: flex;
+    flex-direction: column;
+}
+.textMenu > h2{
+    text-align: center;
+}
+.textMenu > p {
+    margin:0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.6;
+    width: 80%;
+    padding: 15px;
+    line-height:25px; 
+    text-align: center;
+}
+.iconHolder{
+    margin:1rem auto;
+}
+.iconHolder > i{
+    font-size: 34px;
+    padding: 0;
+}
+.textHolder:hover .iconHolder {
+    transition: all 0.8s ease-in-out;
+    color: #ff1a1a;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+.containerBtn {
+    display: flex;
+}
+.para{
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.6;
+    width: 70%;
+    padding: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+.button{
+    position: relative;
+    background: red;
+    color:#fff;
+    width: 150px;
+    height: 50px;
+    border:none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    /*overflow: hidden;*/
+    -webkit-margin-after: 3rem;
+            margin-bottom: 3rem;
+}
+button::after{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+    height: 50px;
+    left: -100%;
+    top: 0;
+    border:none;
+    border-radius: 25px;
+    background-color: grey;
+}
+button:hover::after {
+    transition: all 0.6s ease;
+    cursor: pointer;
+    left: 0;
+}
+.para1{
+    font-weight: 400;
+    opacity: 0.6;
+    border-top:1px solid rgba(255, 255, 255, 0.26);
+    padding: 2rem 0;
+}
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+/*scrolbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-image: -webkit-linear-gradient(#F5F5F5, #ddd);
+}
+.burger {
+    display: none;
+}
